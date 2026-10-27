@@ -3,15 +3,15 @@ public class Circle {
     private int radius;
 
 
-    public Circle(Point c, int r){
-        center = c;
-        radius = r;
-
+    public Circle(Point x, int y){
+        center = x;
+        radius = y;
     }
+
     public int getRadius(){
         return radius;
     }
     public double getArea(){
-        return MathTools.round((Math.PI)*(Math.pow(radius, 2)), 2);
+        return MathTools.round((Math.pow(radius, 2))*(Math.PI), 2);
     }
 }
